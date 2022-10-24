@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finsweet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,700;1,100&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    
     <header>
         <div class="container">
             <nav class="main-nav">
@@ -20,7 +25,7 @@
                     <li><a href="./page-2.html" target="_blank">Services</a></li>
                     <li><a href="./page-4.html" target="_blank">Blog</a></li>
                     <li><a href="./page-7.html" target="_blank">Contact us</a></li>
-                    <li><a class="cta-btn" href="#">Call to Action</a></li>
+                    <li class="cta-btn"><a  href="#">Call to Action</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,34 +34,35 @@
     <section class="engeneer-section">
         <div class="container">
             <div class="col-2">
-                <h2>Testing Engineer</h2>
+                <h1>Testing Engineer</h>
             </div>
             <div class="row">
-                <div class="Job">
-                    <h3>Job Discription</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="col-2">
+                    <div class="Job">
+                        <h3>Job Discription</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
-                <div class="salaty">
-                    <h3>Salary</h3>
-                    <p>$30000 Per Anum</p>
+                <div class="col-2">
+                    <div class="salary">
+                        <h3>Salary</h3>
+                        <p>$30000 Per Anum</p>
+                    </div>
                 </div>
             </div>
             <div class="engeneer-content bg-lightblue">
                 <div class="row">
-                    <div class="col-2">
                         <ul class="engeneer-items">
                             <li class="orange">Details</li>
                             <li>Reguirements</li>
                             <li>Responsibilities</li>
                         </ul>
-                    </div>
                     <div class="col-2">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, id.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab atque sapiente.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium fugiat magnam praesentium, distinctio corporis rem eveniet nihil non consequatur numquam quae sed optio ullam libero hic cupiditate inventore dignissimos? Provident!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nostrum quae sed earum. Ipsum, magnam. Doloremque necessitatibus, nostrum, debitis labore reiciendis dignissimos dolorum ipsam fugiat consequuntur facere pariatur, fuga sequi.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi autem totam minus
                             recusandae voluptates itaque ex consequuntur voluptate maiores quidem?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel iure eius ab ut culpa quas, facere sit maxime esse voluptates possimus illum animi in ea! Nam nisi dolore perspiciatis quo.</p>
                     </div>
                 </div>
             </div>
@@ -65,75 +71,83 @@
                 <h2>Apply Now</h2>
             </div>
             <div class="row">
-                <div class="col-5">
-                    <div class="engeneer-apply data">
-                        <p>First Name</p>
-                        <p>Last Name</p>
-                        <p>Email id</p>
-                        <p>Mobile No</p>
-                        <p>Why do you thing you are good fit for Ether?</p>
-                    </div>
+                <div class="persnol-data">
+                    <input type="text" value="First Name">
+                </div>
+                <div class="persnol-data">
+                    <input type="text" value="Last Name">
+                </div>
+                <div class="persnol-data">
+                    <input type="text" value="Email Id ">
+                </div>
+                <div class="persnol-data">
+                    <input type="text" value="Mobile No ">
+                </div>
+
+                <div class="type-mess persnol-data">
+                    <input type="text" value="Why do you thing you are good fit for Ether?">
                 </div>
             </div>
-            <div class="engeneer-buttom btm-blank">
-                <a href="#">Submit</a>
+            <div class="submit-btm">
+                <input type="submit" value="Submit">
+            </div>
+            
             </div>
 
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-tag">
-            <div class="container">
-                <div class="col-3">
-                    <div class="about">
-                        <h3>{finsweet</h3>
-                        <h2>Bespoke software solutions</h2>
-                        <div class="footer-bottom">
-                        </div>
-                        <div>
-                            <span> All rights reserved - Finsweet</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="company">
-                            <h3>Company</h3>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                        </div>
-                        <div class="connect">
-                            <h3>Connect</h3>
-                            <a href="#">hi@finsweet.com</a>
-                            <p>+(123)456-7890</p>
-                        </div>
-                    </div>
-                    <div class="join">
-                        <h3>Join Newsletter</h3>
-                        <p class="type">Type email here</p>
-                        <a href="#"> Subscribe</a>
-                        <div class="privacy">
-                        </div>
-                        <div class="row">
-                            <div class="privacy">
-                                <div>Privacy Policy</div>
-                                <div>Terms & Conditions</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <i class="fa-brands fa-facebook"></i>
-
-                </div>
-
-            </div>
+        <div class="container">
+               <div class="row">
+                   <div class="col-3">
+                       <div class="about">
+                           <h3>{finsweet</h3>
+                           <h2>Bespoke software solutions</h2>
+                           <div class="footer-buttom">
+                                   <i style="color: white;" class="fa-brands fa-facebook"></i>
+                                   <i class="fa-brands fa-square-youtube"></i>
+                                   <i class="fa-brands fa-instagram"></i>
+                                   <i class="fa-brands fa-twitter"></i>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="company-connect">
+                               <h3>Company</h3>
+                               <ul>
+                                   <li><a href="#">About Us</a></li>
+                                   <li><a href="#">Careers</a></li>
+                                   <li><a href="#">Services</a></li>
+                                   <li><a href="#">Blog</a></li>
+                               </ul>
+                           </div>
+                           <div class="company-connect">
+                               <h3>Connect</h3>
+                               <a href="#">hi@finsweet.com</a>
+                               <p>+(123)456-7890</p>
+                           </div>
+                       </div>
+                       <div class="join">
+                           <h3>Join Newsletter</h3>
+                           <p class="type">Type email here</p>
+                           <a href="#"> Subscribe</a>
+                         
+                       </div>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="reserved-footer">
+                       <span> All rights reserved - Finsweet</span>
+                   </div>
+                   <div class="row">
+                       <div>Privacy Policy</div>
+                       <div>Terms & Conditions</div>
+                   </div>
+               </div>
         </div>
-        <div class="box">box</div>
-        <i class="fa-brands fa-square-youtube"></i>
-    </footer>
+   </footer>
+
+
+    
 </body>
 </html>

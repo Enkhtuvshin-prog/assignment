@@ -14,10 +14,12 @@ body{
 }
 ul{
     list-style: none;
+    padding: 0;
 }
 .nav-items a{
     color: #063255;
 }
+
 a{
     text-decoration: none;
     color: orange;
@@ -30,13 +32,20 @@ a{
     padding: 1rem;
 }
 .cta-btn{
-    background-color: rgb(234, 197, 136);
-    padding: 15px;
-    border-radius: 10px;
+    background-color: #faebd7;
+    padding: .5rem;
+    border-radius: 60px;
+}
+.cta-btn a{
     color: orange;
 }
+.hero-content h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
 h1{
-    font-size: 64px;
+    font-size: 3rem;
+    font-weight: 800;
     color: #063255;
 }
  p{
@@ -54,9 +63,11 @@ h2{
 .container{
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2.5rem;
+    padding: 2rem;
 }
-
+.hero-section .container{
+    padding: 0;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -68,6 +79,9 @@ h2{
 }
 .img-fluid{
     max-width: 100%;
+}
+.hero-img{
+    padding: -40px;
 }
 .hero-img img{
     vertical-align: bottom;
@@ -101,8 +115,8 @@ h2{
 .col-3{
     display: flex;
     flex: 1 400px;
-    width: calc(100%3 - 40px);
     gap: 40px;
+    width: calc(100%/3 - 40px);
 }
 .post img{
     border-radius: 10px;
@@ -168,17 +182,26 @@ h2{
     position:absolute;
     right: -10px;
     top: -15px;
-
-
 }
-
 .str-buttom{
     padding: 1rem;
 }
-
 .str-buttom a::after{
     content: '\2192';
     color: orange;
+}
+.str-img img{
+    padding: 1.5rem;
+}
+.team-img::after{
+    content: '';
+    background-color: orange;
+    position: absolute;
+    inset: 4.7% 70% 5.8% 4.5%;
+    mix-blend-mode: multiply;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
 }
 /*VACANCIES*/
 .vacancies{
@@ -240,9 +263,17 @@ h2{
     border-radius: 50%;
     bottom: 2rem;
     left: 2rem;
-    padding: 20px;
-
-   
+    padding: 20px;  
+}
+.name p{
+    color: orange;
+}
+.neo-img img{
+    border-radius: 60%;
+    width: 80px;
+}
+.neo-img{
+    margin-top: 30px;
 }
 /*BLOG*/
 .col-3 .blog{
@@ -250,7 +281,6 @@ h2{
     border-radius: 20px;
 
 }    
-
 .blog img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -259,8 +289,6 @@ h2{
 .blog .news-content{
     padding: 10px;
 }
-
-
 /*FOOTER*/
 footer{
     background-color: #063255;
@@ -277,13 +305,14 @@ footer .col-3 a{
 footer .col-3 a::after{
     content: none;
 }
-.connect p{
+.company-connect p{
     color: white;
+    font-size: .8rem;
 }
 
 footer .join p{
     background-color: white;
-    text-align: center;
+    text-align: start;
     padding: 15px;
     width: 300px;
     border-radius: 30px;
@@ -291,52 +320,44 @@ footer .join p{
 }
 .join a{
     background-color: orange;
-    padding: 15px;
+    padding: 10px;
+    width: 150px;
     border-radius: 40px;
 }
-
-
-/*.box{
-    position: relative;
-    box-sizing: 80px;
-    background-color: orange;
-    width: 60px;
-    height: 150px;
-    border-top-right-radius: 20px;
-}*/
-.privacy{
-    margin: 40px;
+footer .row{
+    justify-content: space-between;
+    padding: 1.5rem 0;
 }
-.name p{
-    color: orange;
-}
-.neo-img img{
-    border-radius: 60%;
-    width: 80px;
-}
-.neo-img{
-    margin-top: 30px;
+footer .col-3{
+    justify-content: space-between;
 }
 .footer{
     position: relative;
 }
-.footer-tag::after{
+.footer::after{
     content: '';
     background-color: orange;
     position: absolute;
-    inset: 10% 0% 40% 96%;
+    inset: 10% 0% 40% 97%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.footer-buttom{
-    padding: 2rem;
+footer .container::after{
+    content: '';
+    background-color: orange;
+    position: absolute;
+    inset: 70% 97% 0% 0%;
+    border-top-right-radius: 20px;
+}
+.footer-buttom i{
+    margin: 5px;
+}
+.company-connect a{
+    font-size: .8rem;
 }
 
 
 /*PAGE-2*/
-.serve-content{
-    padding: 10px;
-}
 .btm-blank{
     display: inline-block;
     background-color: orange;
@@ -346,9 +367,10 @@ footer .join p{
 .btm-blank a{
     color: white;
 }
+
 /*BUSINESS*/
 .busi-item li{
-    list-style: circle;
+    list-style-type: disc;
 }
 
 .right-sticker{
@@ -364,7 +386,7 @@ footer .join p{
     border-radius: 20px;
 
 }
-/*.left-sticker{
+.left-sticker{
     position: relative;
 }
 .left-sticker .sticker:after{
@@ -372,9 +394,10 @@ footer .join p{
     position: absolute;
     background-color: orange;
     mix-blend-mode: multiply;
-    inset: 90% 10% 90% 10%;
-
-}*/
+    inset: 25% 92% 50% 0%;
+    border-radius: 20px;
+    left: -40px;
+}
 .ai-img img{
     border-radius: 20px;
 }
@@ -385,10 +408,10 @@ footer .join p{
 
 .positions{
     background-color: #dbe9fa;
-    width: calc(100%/5 - 40px);
+    width: calc(100%/5);
     border-radius: 10px;
     padding: 1.5rem;
-    margin: 10px;
+    margin: 20px;
 }
 /*PAGE-4*/
 .andrew-img img{
@@ -411,10 +434,14 @@ footer .join p{
 /*PAGE-6*/
 .engeneer-content {
     border-radius: 10px;
+    margin: 30px auto;
 }
 .engeneer-items li{
     margin: 30px;
     font-size: 1.5rem;
+}
+.engeneer-section .container{
+    padding: 0;
 }
 .engeneer-items .orange{
     color: orange;
@@ -430,7 +457,45 @@ footer .join p{
     padding: 10px;
     border-radius: 20px;
 }
+.persnol-data input{
+    background-color: #f0f1f3;
+    padding: 1rem;
+    border: 20px;
+    border-radius: 20px;
+    width: 580px;
+    color: #5B5B5B;
+    text-align: start;
+    line-height: -10px;
+}
+.type-mess input{
+    width: 1240px;
+    height: 15vh;
+}
+
+.submit-btm input{
+    margin: 30px 0;
+    background-color: orange;
+    color: white;
+    padding: .8rem 1.6rem;
+    border-radius: 30px;
+    border: white;
+}
 /*PAGE-7*/
-
-
+.data input{
+    background-color: #f0f1f3;
+    padding: 1rem;
+    margin: 10px;
+    border: 20px;
+    border-radius: 20px;
+    width: 500px;
+    color: #5B5B5B;
+    text-align: start;
+    line-height: -10px;
+}
+.type-btm{
+    height: 15vh;
+}
+.map iframe {
+    border-radius: 20px;
+}
 
