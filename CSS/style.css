@@ -24,6 +24,7 @@ a{
     text-decoration: none;
     color: orange;
     font-size: 1rem;
+    font-weight: 700;
 }
 .btm-flex{
     display: flex;
@@ -92,9 +93,9 @@ section{
 .align-end{
     align-items: flex-end;
 }
-.hero-left{
+.align-left{
     align-self:flex-start;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 .partners{
     margin: 10px 0;
@@ -116,6 +117,10 @@ section{
 }
 
 /*SECTORS*/
+. h2{
+    color: #1D3444;
+}
+
 .col-3{
     flex: 1 400px;
     width: calc(100%/3 - 40px);
@@ -129,6 +134,10 @@ section{
 .col-3 a::after{
     content: '\2192';
     color: orange;
+}
+.row h3{
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 /*SOLUTION*/
 .solution-content img{
@@ -245,9 +254,8 @@ section{
     flex-basis: 600px;
 }
 /*work-with*/
-.workwith-content{
-    margin: 10px;
-    align-self: center;
+.ww-content{
+    margin: 20px;
 }
 .ww-name-img img{ 
     border-radius: 60%;
@@ -376,6 +384,9 @@ footer .container::after{
 .btm-blank a{
     color: white;
 }
+.serve img{
+    max-width: 100%;
+}
 
 /*BUSINESS*/
 .busi-item li{
@@ -424,6 +435,10 @@ footer .container::after{
     padding: 1.5rem;
     margin: 20px;
 }
+.passion-img img{
+    width: 100%;
+    height: 650px;
+}
 /*PAGE-4*/
 .andrew-img img{
     width: 80px;
@@ -445,22 +460,15 @@ footer .container::after{
 /*PAGE-6*/
 .engeneer-content {
     border-radius: 10px;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 .engeneer-items li{
     margin: 30px;
     font-size: 1.5rem;
 }
-.engeneer-section .container{
-    padding: 0;
-}
+
 .engeneer-items .orange{
     color: orange;
-}
-.col-4{
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(100%/4 - 40px);
 }
 .data p{
     background-color:#DADBDD ;
@@ -484,9 +492,7 @@ footer .container::after{
     color: white;
     border: 20px;
     width: 100px;
-
 }
-
 /*PAGE-7*/
 .data input{
     background-color: #f0f1f3;
