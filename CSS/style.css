@@ -45,7 +45,6 @@ a{
 }
 h1{
     font-size: 3rem;
-    font-weight: 800;
     color: #063255;
 }
  p{
@@ -54,7 +53,8 @@ h1{
 }
 h2{
     font-size: 2.5rem;
-    font-weight: 900;
+    font-weight: 800;
+    margin-top: 0;
 }
 .bg-lightblue{
     background-color: #dceaf5;
@@ -286,15 +286,17 @@ section{
 .col-3 .blog{
     background-color: white;
     border-radius: 20px;
+}  
 
-}    
 .blog img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 100%;
 }
 .blog .news-content{
-    padding: 10px;
+    box-sizing: border-box;
+    padding: 1.5rem;
+
 }
 /*FOOTER*/
 footer{
