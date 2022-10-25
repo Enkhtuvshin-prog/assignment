@@ -97,7 +97,9 @@ section{
     margin-bottom: 2rem;
 }
 .partners{
-    margin-top: 10px;
+    margin: 10px 0;
+    padding: 30px 0;
+    
 }
 .partners img{
     padding: 1rem;
@@ -123,7 +125,6 @@ section{
 }
 .col-3 a{
     color: orange;
-
 }
 .col-3 a::after{
     content: '\2192';
@@ -152,6 +153,7 @@ section{
 }
 .exp-img{
     position: relative; 
+   max-width: 100%;
 }
 .about-img::after{
     content: '';
@@ -172,10 +174,12 @@ section{
     padding: .5rem;
     border-radius: 20px;
     background-color: aliceblue;
+    border: 1px solid #B0CFDE;
 }
 .str-items  .btm-str{
     color: orange;
     background-color: white;
+    border: none;
 }
 .strategy-content {
     border-radius: 20px;
@@ -204,7 +208,6 @@ section{
     mix-blend-mode: multiply;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-
 }
 /*VACANCIES*/
 .vacancies{
@@ -288,7 +291,7 @@ section{
 .blog img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
+    width: 100%;
 }
 .blog .news-content{
     padding: 10px;
@@ -313,6 +316,9 @@ footer .col-3 a::after{
     color: white;
     font-size: .8rem;
 }
+.footer .contact{
+    padding: 1.5rem 0;
+}
 
 footer .join p{
     background-color: white;
@@ -328,12 +334,10 @@ footer .join p{
     width: 150px;
     border-radius: 40px;
 }
-footer .row{
-    padding: 1.5rem 0;
+.footer .last{
     justify-content: space-between;
+    padding: 1.5rem 0;
 }
-
-
 .footer{
     position: relative;
 }
@@ -403,9 +407,11 @@ footer .container::after{
 }
 .ai-img img{
     border-radius: 20px;
+    max-width: 100%;
 }
 .sticker img{
     border-radius: 20px;
+    max-width: 100%;
 }
 /*PAGE-3*/
 
@@ -431,8 +437,8 @@ footer .container::after{
 }
 .figma-content{
     margin: 0 20%;
-    
 }
+
 
 /*PAGE-6*/
 .engeneer-content {
@@ -467,22 +473,18 @@ footer .container::after{
     border-radius: 20px;
     width: 580px;
     color: #5B5B5B;
-    text-align: start;
-    line-height: -10px;
-}
-.type-mess input{
-    width: 1240px;
-    padding-bottom: 100px;
 }
 
 .submit-btm input{
-    margin: 30px 0;
     background-color: orange;
+    padding: 15px;
+    border-radius: 50px;
     color: white;
-    padding: .8rem 1.6rem;
-    border-radius: 30px;
-    border: white;
+    border: 20px;
+    width: 100px;
+
 }
+
 /*PAGE-7*/
 .data input{
     background-color: #f0f1f3;
@@ -492,7 +494,6 @@ footer .container::after{
     border-radius: 20px;
     width: 500px;
     color: #5B5B5B;
-    text-align: start;
 }
 .data textarea{
     background-color: #f0f1f3;
@@ -500,14 +501,12 @@ footer .container::after{
     margin: 10px;
     border: 20px;
     border-radius: 20px;
-    width: 500px;
     color: #5B5B5B;
-    text-align: start;
-
-
-
 }
 .map iframe {
     border-radius: 20px;
+}
+.location-section h1{
+    margin: 0;
 }
 
